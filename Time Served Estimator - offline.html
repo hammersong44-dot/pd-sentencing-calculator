@@ -62,12 +62,16 @@
   .kicker { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--brass); margin-bottom: 10px; }
   label { font-size: 13px; color: var(--muted); display: block; margin-bottom: 4px; }
   input[type=text], input[type=number], input[type=date] {
-    width: 100%; padding: 9px 10px; font: inherit; font-size: 15px; color: var(--text);
+    width: 100%; height: 40px; padding: 0 10px; font: inherit; font-size: 15px; color: var(--text);
     background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px;
   }
   input:focus { outline: 2px solid var(--brass); outline-offset: 1px; }
   input[type=range] { width: 100%; accent-color: var(--brass); }
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  /* Keep side-by-side boxes level when one label wraps to two lines: the label
+     takes the spare height and the input sits at the bottom of each column. */
+  .grid2 > div { display: flex; flex-direction: column; }
+  .grid2 > div > label { flex: 1; }
   .field { margin-top: 12px; }
   .check { display: flex; gap: 8px; align-items: flex-start; font-size: 14px; color: var(--text); margin-top: 10px; }
   .check input { margin-top: 3px; accent-color: var(--brass); }
