@@ -58,4 +58,4 @@ Then copy `index.html` over the offline copy. Standard library only; no packages
 - `backups/`: earlier versions, including the design-tool export (`*_prestatute.html`).
 - `Time Served Estimator.dc.html`, `support.js`, `sw.js`, `manifest.json`: leftovers from the old design-tool version; the new app doesn't use them.
 
-Rules last verified 2026-10-24 against vault text retrieved from legis.la.gov 2026-10-15. Not committed or pushed to GitHub yet.
+Rules last verified 2026-10-24 against vault text retrieved from legis.la.gov 2026-10-15. Pushed to GitHub main 2026-10-24.
